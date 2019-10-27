@@ -1,0 +1,14 @@
+<h3>{{ this.leyenda }}</h3>
+<div class="input-group">
+    <span class="input-group-addon">
+    <button class="btn btn-primary" type="button" (click)="this.cambiarValor(-5)">
+      <i class="mdi mdi-minus"></i>
+    </button>
+  </span>
+    <input type="text" name="progreso" id="name" class="form-control" [(ngModel)]="progreso" />
+    <span class="input-group-addon">
+    <button class="btn btn-primary" type="button" (click)="this.cambiarValor(+5)">
+      <i class="mdi mdi-plus"></i>
+    </button>
+  </span>
+</div>
