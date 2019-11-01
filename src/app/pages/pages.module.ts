@@ -12,9 +12,12 @@ import { PAGE_ROUTES } from './pages.routes';
 import { FormsModule } from '@angular/forms';
 
 import { ChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
-  declarations: [DashboardComponent, ProgressComponent, Graficas1Component, PagesComponent],
+  declarations: [DashboardComponent, ProgressComponent, Graficas1Component, PagesComponent, AccountSettingsComponent, PromesasComponent, RxjsComponent],
   exports: [DashboardComponent, ProgressComponent, Graficas1Component, PagesComponent],
   imports: [SharedModule, PAGE_ROUTES, FormsModule, ComponentsModule, ChartsModule]
 })
